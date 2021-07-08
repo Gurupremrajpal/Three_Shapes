@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hexagon</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		body{
+			width: 100%;
+			height: 100vh;
+			background: black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: 'Rancho', cursive;
+		}
+
+		.hexa{
+			width: 100px;
+			height: 58px;
+			background: purple;
+			position: relative;
+		}
+
+		.hexa::before{
+			content: "";
+			width: inherit;
+			height: inherit;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: purple;
+			transform: rotate(60deg);
+		}
+		.hexa::after{
+			content: "";
+			width: inherit;
+			height: inherit;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: purple;
+			transform: rotate(-60deg);
+		}
+
+		.Name{
+			color: black;
+			position: absolute;
+			top: 60%;
+			left: 40%;
+			color: purple;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="hexa">
+	</div>
+	<div class="Name">
+		<h1>By:- Guruprem Rajpal</h1>
+	</div>
+
+</body>
+</html>
